@@ -1,8 +1,10 @@
 var express = require('express');
 var router = express.Router();
+const cors = require('cors')
 const knex = require('knex')(require('../knexfile.js')['development']);
 
 router.use(express.json())
+router.use(cors());
 
 /* GET home page. */
 router.get('/', function(req, res, next) {

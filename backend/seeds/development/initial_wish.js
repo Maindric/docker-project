@@ -6,7 +6,7 @@ exports.seed = function(knex) {
       // Inserts seed entries
       return knex('wishes').insert([
         {name: 'Superman', wish: 'With great power comes great chicks.'},
-        {name: 'anon', wish: ''}
+        {name: 'Anon', wish: ''}
       ]);
     });
 };
