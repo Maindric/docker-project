@@ -1,1 +1,1 @@
-# docker-project
+# individual-project
