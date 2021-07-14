@@ -1,9 +1,10 @@
 import './App.css';
 import React, { useRef, useState, useEffect } from 'react';
 
-const url = 'http://localhost:3001'
+const url = process.env.BACKEND_URL;
 
 function App() {
+  console.log(url);
   const [randWish, setRandWish] = useState('');
   const [changeWish, setChangeWish] = useState(false);
   

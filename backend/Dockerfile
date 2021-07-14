@@ -16,4 +16,5 @@ ARG DB_CONNECTION_STRING
 
 ENV DB_CONNECTION_STRING $DB_CONNECTION_STRING
 
-CMD [ "./startup.sh" ]
+# CMD [ "./startup.sh" ]
+CMD npx knex migrate:latest && npx knex seed:run && npm start

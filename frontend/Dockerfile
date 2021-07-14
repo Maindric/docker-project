@@ -12,4 +12,8 @@ RUN yarn global add nodemon
 
 EXPOSE 3000
 
+# ARG BACKEND_URL
+
+# ENV BACKEND_URL $BACKEND_URL
+
 CMD [ "npm", "start" ]
